@@ -7,8 +7,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ajuste para uma maior flexibilidade */
+    flex-direction: column;
 }
+
 .container {
     max-width: 950px;
     background: #a23bf6;
@@ -17,15 +19,18 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
 .header {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px 10px 0 0;
 }
-.header h1, .header h2 {
+
+.header h1 {
     color: #000;
     margin: 0;
 }
+
 .profile-img {
     display: block;
     max-width: 100%;
@@ -34,6 +39,7 @@ body {
     width: 150px;
     border: 1px solid #000000;
 }
+
 .bio {
     text-align: justify;
     color: #000;
@@ -41,31 +47,73 @@ body {
     line-height: 1.6;
     padding: 0 10px;
 }
+
 .contact {
     margin-top: 20px;
 }
+
 .contact h3 {
     font-size: 22px;
     margin-bottom: 10px;
 }
+
 .contact ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Centra os itens */
+    flex-wrap: wrap; /* Permite quebra de linha nos itens */
 }
+
 .contact ul li {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px;
+    display: flex;
+    align-items: center;
 }
+
 .contact ul li img {
     width: 24px;
     vertical-align: middle;
     margin-right: 10px;
 }
+
 .contact a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
+
 .contact a:hover {
     text-decoration: underline;
+}
+
+.technologies {
+    margin-top: 30px;
+}
+
+.technologies h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.technologies ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Alinha as tecnologias no centro */
+    flex-wrap: wrap; /* Permite que as tecnologias quebrem linha */
+}
+
+.technologies ul li {
+    font-size: 18px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.technologies ul li img {
+    width: 30px; /* Ajuste o tamanho das imagens */
+    vertical-align: middle;
+    margin-right: 10px;
 }
