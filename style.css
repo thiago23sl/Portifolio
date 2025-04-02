@@ -1,33 +1,34 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #42e7d1;
-    color: #000000;
+    background-color: #f4f4f9; /* Cor mais suave e neutra */
+    color: #333; /* Cor mais suave para o texto */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ajuste para uma maior flexibilidade */
+    min-height: 100vh;
     flex-direction: column;
 }
 
 .container {
     max-width: 950px;
-    background: #a23bf6;
+    background: #ffffff; /* Fundo branco para dar um visual mais limpo */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
     text-align: center;
+    border: 1px solid #e0e0e0; /* Borda suave para o contêiner */
 }
 
 .header {
-    background-color: #ffffff;
+    background-color: #004d80; /* Azul escuro para uma sensação mais profissional */
     padding: 20px;
     border-radius: 10px 10px 0 0;
 }
 
 .header h1 {
-    color: #000;
+    color: #ffffff; /* Texto branco para contrastar com o fundo */
     margin: 0;
 }
 
@@ -37,12 +38,12 @@ body {
     border-radius: 50%;
     margin: 20px auto;
     width: 150px;
-    border: 1px solid #000000;
+    border: 4px solid #004d80; /* Borda azul escuro para combinar com o tema */
 }
 
 .bio {
     text-align: justify;
-    color: #000;
+    color: #555; /* Cor mais suave para o texto da biografia */
     font-size: 18px;
     line-height: 1.6;
     padding: 0 10px;
@@ -55,14 +56,15 @@ body {
 .contact h3 {
     font-size: 22px;
     margin-bottom: 10px;
+    color: #004d80; /* Azul escuro para os subtítulos */
 }
 
 .contact ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra os itens */
-    flex-wrap: wrap; /* Permite quebra de linha nos itens */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contact ul li {
@@ -79,13 +81,14 @@ body {
 }
 
 .contact a {
-    color: #000000;
+    color: #004d80; /* Azul escuro para os links */
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact a:hover {
     text-decoration: underline;
+    color: #006bb3; /* Azul mais claro para o hover */
 }
 
 .technologies {
@@ -95,14 +98,15 @@ body {
 .technologies h3 {
     font-size: 22px;
     margin-bottom: 10px;
+    color: #004d80;
 }
 
 .technologies ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center; /* Alinha as tecnologias no centro */
-    flex-wrap: wrap; /* Permite que as tecnologias quebrem linha */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .technologies ul li {
@@ -113,7 +117,7 @@ body {
 }
 
 .technologies ul li img {
-    width: 30px; /* Ajuste o tamanho das imagens */
+    width: 30px;
     vertical-align: middle;
     margin-right: 10px;
 }
