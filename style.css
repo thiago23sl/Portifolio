@@ -2,7 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Cor mais suave e neutra */
+    * { /* colocando o asterisco representa que isso são configurações globais que vão ser colocadas em todos os estilos etc */
+            height: 100%;
+        }
+    background-image: linear-gradient(to right, #05b347e3, #29b1b1) ; /* Cor mais suave e neutra */
     color: #333; /* Cor mais suave para o texto */
     display: flex;
     justify-content: center;
