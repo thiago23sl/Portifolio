@@ -125,7 +125,7 @@ body {
 .contact i.fa-instagram { color: #E1306C; }
 .contact i.fa-github { color: #171515; }
 .contact i.fa-linkedin { color: #0077b5; }
-.contact i.fa-envelope { color: #c71610; }
+.contact i.fa-envelope { color: #000000; }
 
 .contact a {
     color: #004d80;
@@ -173,7 +173,8 @@ body {
 .technologies i.fa-github { color: #171515; }
 .technologies i.fa-git-alt { color: #F1502F; }
 .technologies i.fa-python { color: #306998; }
-.technologies i.fa-java { color: #007396; }
+.technologies i.fa-java { color: #ec2025; }
+.technologies i.fa-js { color: #f7df1e; }
 .technologies i.fa-css3-alt { color: #264de4; }
 .technologies i.fa-html5 { color: #e34c26; }
 
