@@ -34,11 +34,6 @@ body {
     margin: 0;
 }
 
-.header p {
-    color: #000000;
-    margin: auto;
-}
-
 .profile-img {
     display: block;
     width: 150px;
@@ -167,56 +162,6 @@ body {
 .technologies i {
     font-size: 28px;
     margin-right: 10px;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.header {
-    background-color: #add8e6;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-}
-.header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-.header h2 {
-    margin: 5px 0 0;
-    font-size: 18px;
-}
-.profile-img {
-    display: block;
-    max-width: 100%;
-    border-radius: 10px;
-    margin: 20px auto;
-}
-.bio {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-}
-.contact {
-    margin-top: 20px;
-}
-.contact h3 {
-    font-size: 20px;
-}
-.contact ul {
-    list-style: none;
-    padding: 0;
-}
-.contact ul li {
-    font-size: 16px;
-    margin: 10px 0;
     transition: transform 0.3s ease;
 }
 
