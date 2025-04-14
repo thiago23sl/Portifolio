@@ -34,6 +34,10 @@ body {
     margin: 0;
 }
 
+.header p{
+    color: #fff;
+}
+
 .profile-img {
     display: block;
     width: 150px;
