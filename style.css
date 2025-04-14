@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-<<<<<<< Updated upstream
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -168,8 +167,6 @@ body {
 .technologies i {
     font-size: 28px;
     margin-right: 10px;
-<<<<<<< HEAD
-=======
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -220,8 +217,6 @@ body {
 .contact ul li {
     font-size: 16px;
     margin: 10px 0;
->>>>>>> Stashed changes
-=======
     transition: transform 0.3s ease;
 }
 
@@ -235,5 +230,4 @@ body {
 
 .technologies li:hover i {
     transform: scale(1.2);
->>>>>>> ba1d80d75647a9106ac1fd667a3cb072f1a26ca1
 }
