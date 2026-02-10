@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thiago Silva Lima | Portfólio</title>
+  <title>Thiago Silva Lima | Portfolio</title>
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
+    <div class="lang-switch">
+      <button onclick="setLang('pt')">PT</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+
     <img src="thiago-profile.png" alt="Thiago Silva Lima" class="profile" />
     <h1>Thiago Silva Lima</h1>
-    <p>IT Support • Infrastructure • Software Development</p>
+    <p data-pt="Suporte Técnico • Infraestrutura • Desenvolvimento de Software"
+       data-en="IT Support • Infrastructure • Software Development"></p>
+
     <div class="links">
       <a href="https://github.com/thiago23sl" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank">LinkedIn</a>
@@ -18,37 +26,36 @@
     </div>
   </header>
 
-  <section class="card">
-    <h2>Sobre mim</h2>
-    <p>
-      Sou estudante de Análise e Desenvolvimento de Sistemas, com experiência prática em suporte técnico,
-      infraestrutura de TI e desenvolvimento de software utilizando Python, Java e tecnologias web.
-    </p>
+  <section class="card accordion">
+    <h2 onclick="toggle(this)" data-pt="Sobre mim" data-en="About Me"></h2>
+    <div class="content">
+      <p data-pt="Sou estudante de Análise e Desenvolvimento de Sistemas com experiência em suporte técnico, infraestrutura de TI e desenvolvimento de software."
+         data-en="I am a Systems Analysis and Development student with experience in IT support, infrastructure and software development."></p>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>About Me</h2>
-    <p>
-      Systems Analysis and Development student with hands-on experience in IT support, infrastructure,
-      and software development.
-    </p>
+  <section class="card accordion">
+    <h2 onclick="toggle(this)" data-pt="Projetos" data-en="Projects"></h2>
+    <div class="content">
+      <ul>
+        <li><strong>Academic Management System</strong> — Python, JSON</li>
+        <li><strong>Library Management System</strong> — Java, Data Structures</li>
+        <li><strong>IT Support Projects</strong> — Networks, Windows Server</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>Projetos</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Academic Management System</h3>
-        <p>Sistema em Python com CRUD completo e persistência em JSON.</p>
-      </div>
-      <div class="project">
-        <h3>Library Management System</h3>
-        <p>Sistema em Java utilizando filas, grafos e lógica de recomendação.</p>
-      </div>
-      <div class="project">
-        <h3>IT Support & Infrastructure</h3>
-        <p>Projetos práticos envolvendo redes, Windows Server e suporte ao usuário.</p>
-      </div>
+  <section class="card accordion">
+    <h2 onclick="toggle(this)" data-pt="Tecnologias" data-en="Technologies"></h2>
+    <div class="content">
+      <ul class="tech">
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Windows Server</li>
+        <li>Redes de Computadores</li>
+      </ul>
     </div>
   </section>
 

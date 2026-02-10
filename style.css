@@ -73,3 +73,38 @@ footer {
   padding: 20px;
   color: #94a3b8;
 }
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.lang-switch button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  background: #020617;
+  color: #22d3ee;
+  border: 1px solid #22d3ee;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.accordion h2 {
+  cursor: pointer;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.content.open {
+  max-height: 500px;
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
