@@ -1,8 +1,6 @@
 const elements = document.querySelectorAll("[data-pt]");
-let currentLang = "pt";
 
 function setLang(lang) {
-  currentLang = lang;
   elements.forEach(el => {
     el.textContent = el.dataset[lang];
   });
