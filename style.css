@@ -1,183 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    background-image: linear-gradient(to right, #05b347e3, #29b1b1);
-    color: #333;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.container {
-    max-width: 950px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    background: #ffffff;
+    max-width: 1000px;
+    width: 100%;
     margin: 20px;
-}
-
-.header {
-    background-color: #004d80;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-}
-
-.header h1 {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #004d80, #0077b6);
+    text-align: center;
+    padding: 40px 20px;
     color: #fff;
-    margin: 0;
-}
-
-.header p {
-    color: #fff;
-}
-
-.profile-img {
-    display: block;
-    width: 150px;
-    max-width: 100%;
+  }
+  
+  .profile-img {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    margin: 20px auto;
-    border: 4px solid #004d80;
-}
-
-.bio {
-    text-align: justify;
-    color: #555;
-    font-size: 18px;
-    line-height: 1.6;
-    padding: 0 10px;
-}
-
-.projects {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 12px;
-}
-
-.projects h3 {
+    object-fit: cover;
+    border: 5px solid #ffffff;
     margin-bottom: 15px;
-    font-size: 24px;
-    color: #333;
-}
-
-.projects ul {
-    list-style: none;
-    padding: 0;
-}
-
-.projects li {
-    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .subtitle {
     font-size: 16px;
-    line-height: 1.5;
-}
-
-.projects a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.projects a:hover {
+    font-weight: 400;
+    opacity: 0.9;
+  }
+  
+  .section {
+    padding: 40px 50px;
+  }
+  
+  .section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
     color: #004d80;
+  }
+  
+  .section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .highlight {
+    background-color: #f4f7fa;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0077b6;
+  }
+  
+  .project-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #004d80;
+  }
+  
+  .project-card a:hover {
     text-decoration: underline;
-}
-
-/* Redes Sociais */
-.contact {
-    margin-top: 30px;
-}
-
-.contact h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #004d80;
-}
-
-.contact ul {
+  }
+  
+  .tech-list {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-}
-
-.contact li {
-    font-size: 18px;
-    margin: 10px 15px;
+    gap: 15px 30px;
+  }
+  
+  .tech-list li {
+    font-size: 16px;
     display: flex;
     align-items: center;
-}
-
-.contact i {
-    font-size: 24px;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-}
-
-.contact i.fa-instagram { color: #E1306C; }
-.contact i.fa-github { color: #171515; }
-.contact i.fa-linkedin { color: #0077b5; }
-.contact i.fa-envelope { color: #000000; }
-
-.contact a {
-    color: #004d80;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact a:hover i {
-    transform: scale(1.2);
-}
-
-/* Tecnologias */
-.technologies {
-    margin-top: 40px;
-}
-
-.technologies h3 {
+    gap: 10px;
+  }
+  
+  .tech-list i {
     font-size: 22px;
-    margin-bottom: 15px;
-    color: #004d80;
-}
-
-.technologies ul {
-    list-style: none;
-    padding: 0;
+  }
+  
+  .contact-links {
     display: flex;
+    gap: 25px;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.technologies li {
-    font-size: 18px;
-    margin: 10px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.technologies i {
-    font-size: 28px;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-}
-
-/* Cores específicas para tecnologias */
-.technologies i.fa-github { color: #171515; }
-.technologies i.fa-git-alt { color: #F1502F; }
-.technologies i.fa-python { color: #306998; }
-.technologies i.fa-java { color: #ec2025; }
-.technologies i.fa-js { color: #f7df1e; }
-.technologies i.fa-css3-alt { color: #264de4; }
-.technologies i.fa-html5 { color: #e34c26; }
-
-.technologies li:hover i {
+  }
+  
+  .contact-links a {
+    font-size: 26px;
+    color: #004d80;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-links a:hover {
     transform: scale(1.2);
-}
+    color: #0077b6;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f7fa;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      padding: 30px 25px;
+    }
+  
+    .header h1 {
+      font-size: 26px;
+    }
+  }
