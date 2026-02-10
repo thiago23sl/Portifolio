@@ -3,95 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <title>Thiago Silva Lima | Portfólio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <img src="foto.jpg" alt="Thiago Silva Lima" class="profile">
-    <h1>Thiago Silva Lima</h1>
-    <p>Desenvolvedor • Programação • Tecnologia</p>
+<header class="header">
+  <img src="foto.jpg" alt="Thiago Silva Lima" class="profile">
+  <h1>Thiago Silva Lima</h1>
+  <p class="subtitle">Desenvolvedor • Programação • Tecnologia</p>
 
-    <div class="links">
-      <a href="https://github.com/thiago23sl" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank">LinkedIn</a>
-      <a href="mailto:thiagosilvalima784@gmail.com">Email</a>
-    </div>
-  </header>
+  <div class="links">
+    <a href="https://github.com/thiago23sl" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank">LinkedIn</a>
+    <a href="mailto:thiagosilvalima784@gmail.com">Email</a>
+  </div>
+</header>
 
-  <section class="section">
-    <h2>Sobre</h2>
-    <p>
-      Estudante de Análise e Desenvolvimento de Sistemas, com foco em programação
-      e experiência prática em projetos acadêmicos e pessoais.
-    </p>
-  </section>
+<section class="section" id="sobre">
+  <h2>Sobre</h2>
+  <p>Estudante de Análise e Desenvolvimento de Sistemas com experiência em desenvolvimento de software e projetos reais em Python, Java e Web.</p>
+</section>
 
-  <section class="section">
-    <h2>Tecnologias</h2>
+<section class="section tech-section">
+  <h2>Tecnologias</h2>
+  <div class="tech-grid">
+    <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><span>Python</span></div>
+    <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><span>Java</span></div>
+    <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><span>JavaScript</span></div>
+    <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><span>HTML</span></div>
+    <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><span>CSS</span></div>
+    <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"><span>PHP</span></div>
+  </div>
+</section>
 
-    <div class="tech-grid">
-      <div class="tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-        <span>Python</span>
-      </div>
+<section class="section projects-section">
+  <h2>Projetos</h2>
 
-      <div class="tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-        <span>Java</span>
-      </div>
+  <div class="project" onclick="openLink('https://github.com/thiago23sl/Menu-de-operacoes-para-gestao-academica')">
+    <h3>Menu de Operações para Gestão Acadêmica</h3>
+    <p>Projeto em Python com menus interativos e persistência de dados em JSON.</p>
+    <span class="btn">Ver no GitHub</span>
+  </div>
 
-      <div class="tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-        <span>JavaScript</span>
-      </div>
+  <div class="project" onclick="openLink('https://github.com/thiago23sl/Financiamento.Imobiliario')">
+    <h3>Financiamento Imobiliário</h3>
+    <p>Sistema em Java que simula financiamentos de imóveis com cálculos e validações.</p>
+    <span class="btn">Ver no GitHub</span>
+  </div>
 
-      <div class="tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-        <span>HTML</span>
-      </div>
+  <div class="project" onclick="openLink('https://github.com/thiago23sl/Site-para-agendamento-lava-car')">
+    <h3>Site para Agendamento Lava Car</h3>
+    <p>Sistema web com PHP, HTML, CSS e JS para agendamento de serviços.</p>
+    <span class="btn">Ver no GitHub</span>
+  </div>
 
-      <div class="tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-        <span>CSS</span>
-      </div>
+  <div class="project" onclick="openLink('https://github.com/thiago23sl/Portifolio')">
+    <h3>Portfólio Web</h3>
+    <p>Este próprio portfólio em HTML, CSS e JavaScript.</p>
+    <span class="btn">Ver no GitHub</span>
+  </div>
 
-      <div class="tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-        <span>Git</span>
-      </div>
-    </div>
-  </section>
+</section>
 
-  <section class="section">
-    <h2>Projetos</h2>
+<footer>
+  © 2026 — Thiago Silva Lima
+</footer>
 
-    <div class="projects">
-      <div class="project">
-        <h3>Sistema de Gestão Acadêmica</h3>
-        <p>Python • CRUD • Persistência em JSON</p>
-        <a href="https://github.com/thiago23sl" target="_blank">Ver no GitHub</a>
-      </div>
-
-      <div class="project">
-        <h3>Sistema de Biblioteca</h3>
-        <p>Java • Estruturas de Dados</p>
-        <a href="https://github.com/thiago23sl" target="_blank">Ver no GitHub</a>
-      </div>
-
-      <div class="project">
-        <h3>Portfólio Web</h3>
-        <p>HTML • CSS • JavaScript</p>
-        <a href="https://github.com/thiago23sl/Portifolio" target="_blank">Ver no GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 — Thiago Silva Lima</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
