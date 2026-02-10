@@ -1,98 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thiago Silva Lima | Portfolio</title>
-  <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <title>Thiago Silva Lima | Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Devicon (ícones tech P&B) -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
-<header class="hero">
+<header class="header">
   <div class="lang-switch">
     <button onclick="setLang('pt')">PT</button>
     <button onclick="setLang('en')">EN</button>
   </div>
 
-  <img src="thiago-profile.png" class="profile" alt="Thiago Silva Lima">
+  <img src="foto.jpg" alt="Thiago Silva Lima" class="profile-pic">
+
   <h1>Thiago Silva Lima</h1>
 
-  <p class="subtitle"
-     data-pt="Suporte Técnico • Infraestrutura • Desenvolvimento de Software"
-     data-en="IT Support • Infrastructure • Software Development">
+  <p id="subtitle">
+    Estudante de Análise e Desenvolvimento de Sistemas
   </p>
 
   <div class="links">
     <a href="https://github.com/thiago23sl" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank">LinkedIn</a>
-    <a href="mailto:thiagosilvalima784@gmail.com">Email</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    <a href="mailto:thiagosl@email.com">Email</a>
   </div>
 </header>
 
-<main>
+<main class="container">
 
-<section class="card accordion">
-  <h2 onclick="toggle(this)" data-pt="Sobre mim" data-en="About me"></h2>
-  <div class="content">
-    <p data-pt="Sou estudante de Análise e Desenvolvimento de Sistemas, com experiência real em suporte técnico, infraestrutura de TI e desenvolvimento de software. Atuo com manutenção de hardware e software, redes de computadores e criação de sistemas em Python, Java e Web."
-       data-en="I am a Systems Analysis and Development student with real experience in IT support, infrastructure, and software development. I work with hardware and software maintenance, computer networks, and system development using Python, Java, and Web technologies.">
-    </p>
-  </div>
-</section>
+  <!-- SOBRE -->
+  <section class="accordion">
+    <button class="accordion-btn" onclick="toggleAccordion(this)">
+      <span id="about-title">Sobre mim</span>
+    </button>
+    <div class="accordion-content">
+      <p id="about-text">
+        Sou estudante de tecnologia com foco em desenvolvimento de software,
+        suporte técnico e redes. Tenho experiência prática em projetos acadêmicos
+        e pessoais.
+      </p>
+    </div>
+  </section>
 
-<section class="card accordion">
-  <h2 onclick="toggle(this)" data-pt="Projetos" data-en="Projects"></h2>
-  <div class="content">
-    <ul>
-      <li><strong>Academic Management System</strong> — Python, JSON, CRUD</li>
-      <li><strong>Library Management System</strong> — Java, Data Structures</li>
-      <li><strong>IT Support Projects</strong> — Networks, Windows Server</li>
-    </ul>
-  </div>
-</section>
+  <!-- TECNOLOGIAS -->
+  <section class="accordion">
+    <button class="accordion-btn" onclick="toggleAccordion(this)">
+      <span id="tech-title">Tecnologias</span>
+    </button>
+    <div class="accordion-content tech-grid">
+      <i class="devicon-python-plain"></i>
+      <i class="devicon-java-plain"></i>
+      <i class="devicon-html5-plain"></i>
+      <i class="devicon-css3-plain"></i>
+      <i class="devicon-javascript-plain"></i>
+      <i class="devicon-git-plain"></i>
+      <i class="devicon-github-original"></i>
+      <i class="devicon-linux-plain"></i>
+    </div>
+  </section>
 
-<section class="card accordion">
-  <h2 onclick="toggle(this)" data-pt="Tecnologias" data-en="Technologies"></h2>
-  <div class="content tech-grid">
-
-    <div>
-      <h3>Experiência Real</h3>
+  <!-- PROJETOS -->
+  <section class="accordion">
+    <button class="accordion-btn" onclick="toggleAccordion(this)">
+      <span id="projects-title">Projetos</span>
+    </button>
+    <div class="accordion-content">
       <ul>
-        <li>Python (2+ anos)</li>
-        <li>Java</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Git & GitHub</li>
+        <li>
+          <strong>Sistema Acadêmico</strong> — Python, JSON
+        </li>
+        <li>
+          <strong>Sistema de Biblioteca</strong> — Java, Estruturas de Dados
+        </li>
+        <li>
+          <strong>Projetos de Suporte em TI</strong> — Redes, Windows Server
+        </li>
       </ul>
     </div>
-
-    <div>
-      <h3>Infraestrutura & Suporte</h3>
-      <ul>
-        <li>Windows Server 2019</li>
-        <li>Redes de Computadores</li>
-        <li>Suporte Técnico</li>
-        <li>Manutenção de Hardware</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>Outros Conhecimentos</h3>
-      <ul>
-        <li>Linux</li>
-        <li>ESP32 / IoT</li>
-        <li>Machine Learning (acadêmico)</li>
-        <li>JSON & validação de dados</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
+  </section>
 
 </main>
 
 <footer>
-  © <span id="year"></span> Thiago Silva Lima
+  <p>© 2026 — Thiago Silva Lima</p>
 </footer>
 
 <script src="script.js"></script>

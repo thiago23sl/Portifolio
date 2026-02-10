@@ -10,34 +10,9 @@ body {
   color: #e5e7eb;
 }
 
-.hero {
+.header {
   text-align: center;
-  padding: 70px 20px;
-  position: relative;
-}
-
-.profile {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 4px solid #38bdf8;
-  object-fit: cover;
-}
-
-.subtitle {
-  margin-top: 10px;
-  color: #94a3b8;
-}
-
-.links {
-  margin-top: 15px;
-}
-
-.links a {
-  margin: 0 10px;
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 40px 20px;
 }
 
 .lang-switch {
@@ -47,57 +22,72 @@ body {
 }
 
 .lang-switch button {
-  margin-left: 5px;
-  padding: 6px 10px;
-  background: #020617;
-  color: #38bdf8;
+  background: none;
   border: 1px solid #38bdf8;
-  border-radius: 6px;
+  color: #38bdf8;
+  margin-left: 5px;
+  padding: 5px 8px;
   cursor: pointer;
 }
 
-main {
-  max-width: 900px;
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.links a {
+  color: #38bdf8;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
   margin: auto;
   padding: 20px;
 }
 
-.card {
-  background: rgba(30, 41, 59, 0.85);
-  margin-bottom: 20px;
-  border-radius: 14px;
-  padding: 20px;
+.accordion {
+  margin-bottom: 15px;
 }
 
-.card h2 {
-  cursor: pointer;
+.accordion-btn {
+  width: 100%;
+  background: #020617;
   color: #38bdf8;
+  padding: 15px;
+  border: 1px solid #1e293b;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
 }
 
-.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-.content.open {
-  max-height: 800px;
-  margin-top: 15px;
+.accordion-content {
+  display: none;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-top: none;
+  padding: 15px;
 }
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 20px;
+  text-align: center;
 }
 
-.tech-grid h3 {
-  margin-bottom: 8px;
-  color: #7dd3fc;
+.tech-grid i {
+  font-size: 40px;
+  color: #9ca3af; /* preto e branco */
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  color: #94a3b8;
+  color: #6b7280;
 }
