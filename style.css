@@ -6,88 +6,77 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #0f172a, #020617);
+  background: #0b1220;
   color: #e5e7eb;
 }
 
-.header {
+header {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
-.lang-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+header h1 {
+  font-size: 2.5rem;
 }
 
-.lang-switch button {
-  background: none;
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-  margin-left: 5px;
-  padding: 5px 8px;
-  cursor: pointer;
+header p {
+  color: #94a3b8;
+  margin-top: 8px;
 }
 
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 3px solid #38bdf8;
-  object-fit: cover;
-  margin-bottom: 15px;
+.links {
+  margin-top: 20px;
 }
 
 .links a {
-  color: #38bdf8;
   margin: 0 10px;
+  color: #38bdf8;
   text-decoration: none;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.accordion {
-  margin-bottom: 15px;
-}
-
-.accordion-btn {
-  width: 100%;
-  background: #020617;
-  color: #38bdf8;
-  padding: 15px;
-  border: 1px solid #1e293b;
-  cursor: pointer;
-  text-align: left;
-  font-size: 16px;
-}
-
-.accordion-content {
-  display: none;
-  background: #020617;
-  border: 1px solid #1e293b;
-  border-top: none;
-  padding: 15px;
+.section h2 {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 6px;
 }
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
+  margin-top: 20px;
+}
+
+.tech {
+  background: #111827;
+  border-radius: 10px;
+  padding: 15px;
   text-align: center;
 }
 
-.tech-grid i {
-  font-size: 40px;
-  color: #9ca3af; /* preto e branco */
+.tech img {
+  width: 40px;
+  filter: grayscale(100%);
+  margin-bottom: 8px;
+}
+
+.projects {
+  list-style: none;
+}
+
+.projects li {
+  padding: 10px 0;
+  border-bottom: 1px solid #1e293b;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  color: #6b7280;
+  padding: 30px;
+  color: #64748b;
 }
