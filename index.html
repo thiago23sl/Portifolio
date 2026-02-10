@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Thiago Silva Lima</title>
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a3a45b8f8a.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiago Silva Lima | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="Imagens/minha_foto.jpeg" alt="Foto de Thiago" class="profile-img">
-            <h1>Thiago Silva Lima</h1>
-            <p>Estagiário em Suporte Técnico • Futuro Desenvolvedor</p>
-        </header>
 
-        <section class="bio">
-            <h2>Sobre Mim</h2>
-            <p>
-                Sou o <strong>Thiago</strong>, profissional de TI com experiência em suporte técnico, manutenção de hardware/software, e conhecimento em SQL. Atualmente, estagio na Prefeitura de Mandirituba, auxiliando na instalação e manutenção de sistemas operacionais e suporte a usuários. Tenho atuação autônoma em montagem e manutenção de computadores, com forte habilidade em diagnóstico e resolução de problemas técnicos.
-            </p>
-        </section>
+  <main class="container">
 
-        <section class="projects">
-            <h2>Projetos em Destaque</h2>
-            <ul>
-                <li>
-                    <strong>Menu de Operações Acadêmicas</strong><br>
-                    Python + JSON para gerenciamento de alunos e professores.<br>
-                    <a href="https://github.com/thiago23sl/Menu-de-operacoes-para-gestao-academica" target="_blank">🔗 Ver no GitHub</a>
-                </li>
-                <li>
-                    <strong>Financiamento Imobiliário</strong><br>
-                    Simulação com Java e serialização de dados.<br>
-                    <a href="https://github.com/thiago23sl/Financiamento.Imobiliario" target="_blank">🔗 Ver no GitHub</a>
-                </li>
-                <li>
-                    <strong>Site Agendamento Lava Car</strong><br>
-                    Projeto em PHP + HTML/CSS/JS com banco de dados.<br>
-                    <a href="https://github.com/thiago23sl/Site-para-agendamento-lava-car" target="_blank">🔗 Ver no GitHub</a>
-                </li>
-            </ul>
-        </section>
+    <header class="hero">
+      <img src="Imagens/minha_foto.jpeg" alt="Foto de Thiago Silva Lima" class="avatar" />
+      <h1>Thiago Silva Lima</h1>
+      <p class="subtitle">Estagiário em Suporte Técnico • Desenvolvedor em Formação</p>
 
-        <section class="technologies">
-            <h2>Minhas Tecnologias</h2>
-            <ul>
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-css3-alt"></i> CSS</li>
-                <li><i class="fab fa-js"></i> JavaScript</li>
-                <li><i class="fab fa-python"></i> Python</li>
-                <li><i class="fab fa-java"></i> Java</li>
-                <li><i class="fab fa-git-alt"></i> Git</li>
-                <li><i class="fab fa-github"></i> GitHub</li>
-            </ul>
-        </section>
+      <div class="social-links">
+        <a href="https://github.com/thiago23sl" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:thiagosilvalima784@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </header>
 
-        <section class="contact">
-            <h2>Contatos</h2>
-            <ul>
-                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/thiagosl784/" target="_blank">Instagram</a></li>
-                <li><i class="fab fa-github"></i><a href="https://github.com/thiago23sl" target="_blank">GitHub</a></li>
-                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank">LinkedIn</a></li>
-                <li><i class="fas fa-envelope"></i><a href="mailto:thiagosilvalima784@gmail.com">Email</a></li>
-            </ul>
-        </section>
-    </div>
+    <section class="section">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, com experiência prática em <strong>suporte técnico</strong>,
+        manutenção de hardware e software, redes básicas e atendimento ao usuário.
+        Atualmente atuo como estagiário na Prefeitura de Mandirituba, auxiliando na instalação,
+        manutenção e suporte de sistemas computacionais.
+      </p>
+      <p>
+        Tenho interesse em crescer profissionalmente na área de tecnologia, especialmente em
+        desenvolvimento de software, automação e soluções práticas para problemas reais.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Projetos</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Gestão Acadêmica</h3>
+          <p>Sistema em Python utilizando JSON para cadastro e gerenciamento de alunos, professores e turmas.</p>
+          <a href="https://github.com/thiago23sl/Menu-de-operacoes-para-gestao-academica" target="_blank">Ver no GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Financiamento Imobiliário</h3>
+          <p>Aplicação em Java para simulação de financiamentos, com validação de dados e persistência.</p>
+          <a href="https://github.com/thiago23sl/Financiamento.Imobiliario" target="_blank">Ver no GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Site de Agendamento – Lava Jato</h3>
+          <p>Aplicação web em PHP com HTML, CSS, JavaScript e banco de dados para agendamentos online.</p>
+          <a href="https://github.com/thiago23sl/Site-para-agendamento-lava-car" target="_blank">Ver no GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tecnologias</h2>
+      <ul class="tech-list">
+        <li><i class="fab fa-html5"></i> HTML5</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fab fa-git-alt"></i> Git</li>
+        <li><i class="fab fa-github"></i> GitHub</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 • Thiago Silva Lima</p>
+    </footer>
+
+  </main>
+
 </body>
 </html>
