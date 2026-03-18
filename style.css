@@ -61,48 +61,139 @@ body {
   font-size: 0.9rem;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 15px;
-}
-
-.project-card {
-  background: #1e293b;
-  padding: 15px;
-  border-radius: 10px;
-
+/* DROPDOWN PROJECTS STYLES */
+.projects-dropdown {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  gap: 12px;
 }
 
-.project-card p {
-  text-align: justify;
+.dropdown-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #1e293b;
+  transition: all 0.3s ease;
+  border: 1px solid #334155;
 }
 
-.project-card a {
-  margin-top: auto;
+.dropdown-item:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+  transform: translateY(-3px);
+}
+
+.dropdown-toggle {
+  width: 100%;
+  padding: 18px 15px;
+  background: #1e293b;
+  border: none;
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-toggle:hover {
+  background: #334155;
+}
+
+.dropdown-toggle i {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
   color: #38bdf8;
-  font-weight: 500;
 }
 
-.project-card a:hover {
-  text-decoration: underline;
+.dropdown-item.active .dropdown-toggle {
+  background: #334155;
+  color: #38bdf8;
 }
 
-.tech-list {
+.dropdown-item.active .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #0f172a;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+.dropdown-item.active .dropdown-content {
+  max-height: 500px;
+  padding: 15px 15px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-content p {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.project-footer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #334155;
 }
 
-.tech-list li {
-  background: #1e293b;
-  padding: 8px 12px;
-  border-radius: 6px;
-  list-style: none;
+.tech-badge {
+  background: #334155;
+  color: #38bdf8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
+
+.tech-badge:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.repo-link {
+  margin-left: auto;
+  padding: 8px 16px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.repo-link:hover {
+  background: #06b6d4;
+  transform: translateX(3px);
+}
+
+
 
 .footer {
   text-align: center;

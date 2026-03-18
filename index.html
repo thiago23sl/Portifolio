@@ -92,71 +92,114 @@
     <section class="section">
       <h2>Projetos</h2>
 
-      <div class="projects">
+      <div class="projects-dropdown">
 
-        <div class="project-card">
-          <h3>Gestão Acadêmica</h3>
-          <p>
-            Sistema desenvolvido em Python com persistência em JSON para gerenciamento completo de alunos,
-            professores, cursos e turmas. O projeto implementa operações CRUD (Create, Read, Update, Delete),
-            validação de dados (como CPF) e organização modular do código, demonstrando boas práticas de
-            programação e estruturação de sistemas.
-          </p>
-          <a href="https://github.com/thiago23sl/Menu-de-operacoes-para-gestao-academica" target="_blank">
-            Repositório
-          </a>
+        <div class="dropdown-item">
+          <button class="dropdown-toggle">
+            <span class="project-title">Gestão Acadêmica</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Sistema desenvolvido em Python com persistência em JSON para gerenciamento completo de alunos,
+              professores, cursos e turmas. O projeto implementa operações CRUD (Create, Read, Update, Delete),
+              validação de dados (como CPF) e organização modular do código, demonstrando boas práticas de
+              programação e estruturação de sistemas.
+            </p>
+            <div class="project-footer">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">JSON</span>
+              <a href="https://github.com/thiago23sl/Menu-de-operacoes-para-gestao-academica" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> Repositório
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Financiamento Imobiliário</h3>
-          <p>
-            Aplicação em Java baseada em Programação Orientada a Objetos (POO) para simulação de financiamentos
-            imobiliários. O sistema realiza cálculos de parcelas, permite manipulação de dados e aplica conceitos
-            fundamentais como encapsulamento, classes e métodos, com foco em organização e clareza do código.
-          </p>
-          <a href="https://github.com/thiago23sl/Financiamento.Imobiliario" target="_blank">
-            Repositório
-          </a>
+        <div class="dropdown-item">
+          <button class="dropdown-toggle">
+            <span class="project-title">Financiamento Imobiliário</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Aplicação em Java baseada em Programação Orientada a Objetos (POO) para simulação de financiamentos
+              imobiliários. O sistema realiza cálculos de parcelas, permite manipulação de dados e aplica conceitos
+              fundamentais como encapsulamento, classes e métodos, com foco em organização e clareza do código.
+            </p>
+            <div class="project-footer">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">POO</span>
+              <a href="https://github.com/thiago23sl/Financiamento.Imobiliario" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> Repositório
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Lava Jato 123</h3>
-          <p>
-            Sistema web completo para agendamento de serviços automotivos, desenvolvido com HTML, CSS,
-            JavaScript e PHP. Possui funcionalidades de cadastro e login de usuários, controle de horários
-            e integração com banco de dados, representando uma aplicação full stack funcional.
-          </p>
-          <a href="https://github.com/thiago23sl/Site-para-agendamento-lava-car" target="_blank">
-            Repositório
-          </a>
+        <div class="dropdown-item">
+          <button class="dropdown-toggle">
+            <span class="project-title">Lava Jato 123</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Sistema web completo para agendamento de serviços automotivos, desenvolvido com HTML, CSS,
+              JavaScript e PHP. Possui funcionalidades de cadastro e login de usuários, controle de horários
+              e integração com banco de dados, representando uma aplicação full stack funcional.
+            </p>
+            <div class="project-footer">
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <a href="https://github.com/thiago23sl/Site-para-agendamento-lava-car" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> Repositório
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Site em WebNode </h3>
-          <p>
-            Projeto acadêmico desenvolvido com foco em comunicação aplicada, apresentando conteúdos organizados
-            em uma página web. O site demonstra habilidades em estruturação de layout, design e apresentação
-            de informações de forma clara e objetiva, utilizando ferramentas modernas de criação de páginas.
-          </p>
-          <a href="https://atp-comunicacao-aplicada8.webnode.page" target="_blank">
-            Visualizar Projeto
-          </a>
+        <div class="dropdown-item">
+          <button class="dropdown-toggle">
+            <span class="project-title">Site em WebNode</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Projeto acadêmico desenvolvido com foco em comunicação aplicada, apresentando conteúdos organizados
+              em uma página web. O site demonstra habilidades em estruturação de layout, design e apresentação
+              de informações de forma clara e objetiva, utilizando ferramentas modernas de criação de páginas.
+            </p>
+            <div class="project-footer">
+              <span class="tech-badge">WebNode</span>
+              <span class="tech-badge">Web Design</span>
+              <a href="https://atp-comunicacao-aplicada8.webnode.page" target="_blank" class="repo-link">
+                <i class="fas fa-external-link-alt"></i> Visualizar Projeto
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Sistema de Gerenciamento de Biblioteca</h3>
-          <p>
-            Sistema desenvolvido em Java utilizando estruturas de dados para gerenciamento eficiente de uma
-            biblioteca. Inclui funcionalidades como cadastro de livros, controle de empréstimos, fila de espera
-            e histórico de consultas, além de aplicação de conceitos como grafos para recomendações de leitura.
-          </p>
-          <a href="https://github.com/thiago23sl/Sistema-de-gerenciamento-de-biblioteca-com-estruturas-de-dados"
-            target="_blank">
-            Repositório
-          </a>
+        <div class="dropdown-item">
+          <button class="dropdown-toggle">
+            <span class="project-title">Sistema de Gerenciamento de Biblioteca</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <p>
+              Sistema desenvolvido em Java utilizando estruturas de dados para gerenciamento eficiente de uma
+              biblioteca. Inclui funcionalidades como cadastro de livros, controle de empréstimos, fila de espera
+              e histórico de consultas, além de aplicação de conceitos como grafos para recomendações de leitura.
+            </p>
+            <div class="project-footer">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Estruturas de Dados</span>
+              <a href="https://github.com/thiago23sl/Sistema-de-gerenciamento-de-biblioteca-com-estruturas-de-dados" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> Repositório
+              </a>
+            </div>
+          </div>
         </div>
-
-        <!-- Adicionar novo projeto aqui -->
 
       </div>
     </section>
