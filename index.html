@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio profissional de Thiago Silva Lima - Desenvolvedor Python e Especialista em Suporte Técnico">
+  <meta name="theme-color" content="#3b82f6">
   <title>Thiago Silva Lima | Portfólio</title>
 
   <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon" />
@@ -20,27 +22,32 @@
 
 <body>
 
-  <main class="container">
+  <main class="container" role="main">
+
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro" title="Clique para alternar entre modo claro e escuro">
+      <i class="fas fa-moon"></i>
+    </button>
 
     <!-- HEADER -->
-    <header class="header">
-      <img src="Imagens/minha_foto.jpg" alt="Thiago" class="profile-img" />
+    <header class="header" role="banner">
+      <img src="Imagens/minha_foto.jpg" alt="Foto de Thiago Silva Lima" class="profile-img" />
 
       <div class="header-text">
         <h1>Thiago Silva Lima</h1>
         <p class="subtitle">Suporte Técnico • Desenvolvedor Python</p>
 
-        <div class="social-links">
-          <a href="https://github.com/thiago23sl" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:thiagosilvalima784@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
+        <nav class="social-links" aria-label="Redes Sociais">
+          <a href="https://github.com/thiago23sl" target="_blank" rel="noopener noreferrer" title="GitHub - Thiago Silva Lima" aria-label="Visite meu GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank" rel="noopener noreferrer" title="LinkedIn - Thiago Silva Lima" aria-label="Visite meu LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:thiagosilvalima784@gmail.com" title="Enviar email para Thiago" aria-label="Envie-me um email"><i class="fas fa-envelope"></i></a>
+        </nav>
       </div>
     </header>
 
     <!-- SOBRE -->
-    <section class="section">
-      <h2>Sobre Mim</h2>
+    <section class="section" aria-labelledby="about-heading">
+      <h2 id="about-heading">Sobre Mim</h2>
       <p>
         Sou estudante de Análise e Desenvolvimento de Sistemas com experiência em programação e suporte técnico, atuando
         com tecnologias como Python, Java e desenvolvimento web.
@@ -49,7 +56,6 @@
         Tenho foco na criação de sistemas completos e funcionais, aplicando boas práticas de código, organização e
         resolução de problemas. Já desenvolvi projetos como sistemas de gestão, aplicações web com login e cadastro, e
         soluções com persistência de dados.
-
       </p>
       <p>
         Estou em busca da minha primeira oportunidade de estágio em TI, com o objetivo de crescer profissionalmente,
@@ -58,48 +64,43 @@
     </section>
 
     <!-- EXPERIÊNCIA -->
-    <section class="section">
-      <h2>Experiência</h2>
-
+    <section class="section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experiência</h2>
 
       <div class="exp-item">
         <h3>Prefeitura Municipal — Suporte Técnico</h3>
-        <span>2025 - 2026</span>
+        <span class="exp-date">2025 - 2026</span>
         <p>
           Atuação no suporte técnico a usuários em ambiente público, realizando manutenção de computadores, instalação e
           configuração de sistemas operacionais, softwares e periféricos.
           Responsável pelo atendimento a chamados, diagnóstico e resolução de problemas técnicos, além de suporte em
           rede básica e organização de equipamentos.
         </p>
-        <div class="exp-item">
-          <h3>Autônomo — Suporte e Manutenção de Computadores</h3>
-          <span>2022 - 2024</span>
-          <p>
-            Atuação com montagem, manutenção e diagnóstico de computadores, incluindo instalação de sistemas,
-            formatação, otimização de desempenho e suporte remoto a usuários.
-            Experiência prática com substituição de componentes, validação de hardware e configuração de redes básicas.
-          </p>
-        </div>
-      </div>
       </div>
 
-      <!-- Se quiser adicionar outra experiência futuramente -->
-      <!-- <div class="exp-item">Adicionar aqui</div> -->
-
+      <div class="exp-item">
+        <h3>Autônomo — Suporte e Manutenção de Computadores</h3>
+        <span class="exp-date">2022 - 2024</span>
+        <p>
+          Atuação com montagem, manutenção e diagnóstico de computadores, incluindo instalação de sistemas,
+          formatação, otimização de desempenho e suporte remoto a usuários.
+          Experiência prática com substituição de componentes, validação de hardware e configuração de redes básicas.
+        </p>
+      </div>
     </section>
 
     <!-- PROJETOS -->
-    <section class="section">
-      <h2>Projetos</h2>
+    <section class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projetos</h2>
 
-      <div class="projects-dropdown">
+      <div class="projects-dropdown" role="region" aria-label="Lista de projetos">
 
-        <div class="dropdown-item">
-          <button class="dropdown-toggle">
+        <article class="dropdown-item">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="project-1">
             <span class="project-title">Gestão Acadêmica</span>
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </button>
-          <div class="dropdown-content">
+          <div class="dropdown-content" id="project-1" hidden>
             <p>
               Sistema desenvolvido em Python com persistência em JSON para gerenciamento completo de alunos,
               professores, cursos e turmas. O projeto implementa operações CRUD (Create, Read, Update, Delete),
@@ -109,19 +110,19 @@
             <div class="project-footer">
               <span class="tech-badge">Python</span>
               <span class="tech-badge">JSON</span>
-              <a href="https://github.com/thiago23sl/Menu-de-operacoes-para-gestao-academica" target="_blank" class="repo-link">
+              <a href="https://github.com/thiago23sl/Menu-de-operacoes-para-gestao-academica" target="_blank" rel="noopener noreferrer" class="repo-link" title="Acessar repositório do projeto">
                 <i class="fab fa-github"></i> Repositório
               </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="dropdown-item">
-          <button class="dropdown-toggle">
+        <article class="dropdown-item">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="project-2">
             <span class="project-title">Financiamento Imobiliário</span>
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </button>
-          <div class="dropdown-content">
+          <div class="dropdown-content" id="project-2" hidden>
             <p>
               Aplicação em Java baseada em Programação Orientada a Objetos (POO) para simulação de financiamentos
               imobiliários. O sistema realiza cálculos de parcelas, permite manipulação de dados e aplica conceitos
@@ -130,19 +131,19 @@
             <div class="project-footer">
               <span class="tech-badge">Java</span>
               <span class="tech-badge">POO</span>
-              <a href="https://github.com/thiago23sl/Financiamento.Imobiliario" target="_blank" class="repo-link">
+              <a href="https://github.com/thiago23sl/Financiamento.Imobiliario" target="_blank" rel="noopener noreferrer" class="repo-link" title="Acessar repositório do projeto">
                 <i class="fab fa-github"></i> Repositório
               </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="dropdown-item">
-          <button class="dropdown-toggle">
+        <article class="dropdown-item">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="project-3">
             <span class="project-title">Lava Jato 123</span>
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </button>
-          <div class="dropdown-content">
+          <div class="dropdown-content" id="project-3" hidden>
             <p>
               Sistema web completo para agendamento de serviços automotivos, desenvolvido com HTML, CSS,
               JavaScript e PHP. Possui funcionalidades de cadastro e login de usuários, controle de horários
@@ -152,19 +153,19 @@
               <span class="tech-badge">HTML/CSS</span>
               <span class="tech-badge">PHP</span>
               <span class="tech-badge">MySQL</span>
-              <a href="https://github.com/thiago23sl/Site-para-agendamento-lava-car" target="_blank" class="repo-link">
+              <a href="https://github.com/thiago23sl/Site-para-agendamento-lava-car" target="_blank" rel="noopener noreferrer" class="repo-link" title="Acessar repositório do projeto">
                 <i class="fab fa-github"></i> Repositório
               </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="dropdown-item">
-          <button class="dropdown-toggle">
+        <article class="dropdown-item">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="project-4">
             <span class="project-title">Site em WebNode</span>
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </button>
-          <div class="dropdown-content">
+          <div class="dropdown-content" id="project-4" hidden>
             <p>
               Projeto acadêmico desenvolvido com foco em comunicação aplicada, apresentando conteúdos organizados
               em uma página web. O site demonstra habilidades em estruturação de layout, design e apresentação
@@ -173,19 +174,19 @@
             <div class="project-footer">
               <span class="tech-badge">WebNode</span>
               <span class="tech-badge">Web Design</span>
-              <a href="https://atp-comunicacao-aplicada8.webnode.page" target="_blank" class="repo-link">
+              <a href="https://atp-comunicacao-aplicada8.webnode.page" target="_blank" rel="noopener noreferrer" class="repo-link" title="Visualizar projeto">
                 <i class="fas fa-external-link-alt"></i> Visualizar Projeto
               </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="dropdown-item">
-          <button class="dropdown-toggle">
+        <article class="dropdown-item">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="project-5">
             <span class="project-title">Sistema de Gerenciamento de Biblioteca</span>
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </button>
-          <div class="dropdown-content">
+          <div class="dropdown-content" id="project-5" hidden>
             <p>
               Sistema desenvolvido em Java utilizando estruturas de dados para gerenciamento eficiente de uma
               biblioteca. Inclui funcionalidades como cadastro de livros, controle de empréstimos, fila de espera
@@ -194,53 +195,101 @@
             <div class="project-footer">
               <span class="tech-badge">Java</span>
               <span class="tech-badge">Estruturas de Dados</span>
-              <a href="https://github.com/thiago23sl/Sistema-de-gerenciamento-de-biblioteca-com-estruturas-de-dados" target="_blank" class="repo-link">
+              <a href="https://github.com/thiago23sl/Sistema-de-gerenciamento-de-biblioteca-com-estruturas-de-dados" target="_blank" rel="noopener noreferrer" class="repo-link" title="Acessar repositório do projeto">
                 <i class="fab fa-github"></i> Repositório
               </a>
             </div>
           </div>
-        </div>
-
+        </article>
       </div>
     </section>
 
     <!-- TECNOLOGIAS -->
-    <section class="section">
-      <h2>Tecnologias</h2>
+    <section class="section" aria-labelledby="tech-heading">
+      <h2 id="tech-heading">Tecnologias</h2>
 
-      <div class="tech-icons">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-          alt="JavaScript">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows">
-
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Redes">
-
+      <div class="tech-grid">
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+          <label>HTML</label>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+          <label>CSS</label>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <label>JavaScript</label>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <label>Python</label>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <label>Java</label>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+          <label>Git</label>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+          <label>MySQL</label>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+          <label>VS Code</label>
+        </div>
       </div>
     </section>
+
     <!-- CONTATO -->
-    <section class="section">
-      <h2>Contato</h2>
-      <p>Email: thiagosilvalima784@gmail.com</p>
-      <p>Telefone: (41) 99502-7851</p>
+    <section class="section contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Entre em Contato</h2>
+      
+      <div class="contact-content">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:thiagosilvalima784@gmail.com">thiagosilvalima784@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3>Telefone</h3>
+            <a href="tel:+5541995027851">(41) 99502-7851</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank" rel="noopener noreferrer">Conecte comigo</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/thiago23sl" target="_blank" rel="noopener noreferrer">Veja meus projetos</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer">
-      <p>© 2026 • Thiago Silva Lima</p>
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <p>&copy; 2026 Thiago Silva Lima. Todos os direitos reservados.</p>
     </footer>
-
   </main>
+
+  <script src="script.js" defer></script>
 </body>
 
 </html>
