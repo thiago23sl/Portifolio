@@ -373,7 +373,7 @@ body {
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: var(--spacing-md);
-}
+
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
@@ -549,6 +549,19 @@ body {
   font-weight: 500;
   text-decoration: none;
   transition: all var(--transition-fast);
+}
+
+.contact-item a.email-link {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.contact-item a.whatsapp-link {
+  font-size: 0.95rem;
+  color: #25D366;
+  font-weight: 600;
 }
 
 .contact-item a:hover {
