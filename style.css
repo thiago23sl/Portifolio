@@ -315,22 +315,7 @@ body {
   outline: 3px solid var(--primary-color);
   outline-offset: 3px;
 }
-
-/* Estilo simples para link de CV no header */
-.cv-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 10px;
-  background: var(--primary-color);
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-left: 8px;
-}
-
-.cv-link:hover { background: var(--primary-dark); transform: translateY(-2px); }
+/* Estilos de link de CV removidos (não necessário) */
 
 .dropdown-toggle i {
   font-size: 1rem;
