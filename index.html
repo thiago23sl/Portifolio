@@ -7,8 +7,35 @@
   <meta name="description" content="Portfólio profissional de Thiago Silva Lima - Desenvolvedor Python e Especialista em Suporte Técnico">
   <meta name="theme-color" content="#3b82f6">
   <title>Thiago Silva Lima | Portfólio</title>
-
   <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><defs><style>.ts-bg{fill:%233b82f6}.ts-text{fill:white;font-weight:700;font-size:90px;font-family:Arial,sans-serif;dominant-baseline:middle;text-anchor:middle}</style></defs><rect class='ts-bg' width='180' height='180' rx='30'/><text class='ts-text' x='90' y='90'>TS</text></svg>" type="image/svg+xml" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Thiago Silva Lima | Portfólio" />
+  <meta property="og:description" content="Desenvolvedor Python e Especialista em Suporte Técnico — projetos em Python, Java, Web e Firebase." />
+  <meta property="og:image" content="Imagens/minha_foto.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/thiago23sl" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Thiago Silva Lima | Portfólio" />
+  <meta name="twitter:description" content="Desenvolvedor Python e Especialista em Suporte Técnico — veja meus projetos e entre em contato." />
+  <meta name="twitter:image" content="Imagens/minha_foto.jpg" />
+
+  <!-- JSON-LD (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thiago Silva Lima",
+    "url": "https://github.com/thiago23sl",
+    "sameAs": [
+      "https://github.com/thiago23sl",
+      "https://www.linkedin.com/in/thiago-s-lima23/"
+    ],
+    "jobTitle": "Desenvolvedor Python & Suporte Técnico",
+    "image": "Imagens/minha_foto.jpg"
+  }
+  </script>
 
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +58,13 @@
 
     <!-- HEADER -->
     <header class="header" role="banner">
-      <img src="Imagens/minha_foto.jpg" alt="Foto de Thiago Silva Lima" class="profile-img" />
+       <img src="Imagens/minha_foto.jpg"
+         srcset="Imagens/minha_foto-400.jpg 400w, Imagens/minha_foto-800.jpg 800w, Imagens/minha_foto.jpg 1200w"
+         sizes="(max-width: 480px) 120px, (max-width: 768px) 140px, 180px"
+         width="180" height="180"
+         loading="lazy"
+         alt="Thiago Silva Lima — foto profissional"
+         class="profile-img" />
 
       <div class="header-text">
         <h1>Thiago Silva Lima</h1>
@@ -41,6 +74,7 @@
           <a href="https://github.com/thiago23sl" target="_blank" rel="noopener noreferrer" title="GitHub - Thiago Silva Lima" aria-label="Visite meu GitHub"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/thiago-s-lima23/" target="_blank" rel="noopener noreferrer" title="LinkedIn - Thiago Silva Lima" aria-label="Visite meu LinkedIn"><i class="fab fa-linkedin"></i></a>
           <a href="mailto:thiagosilvalima784@gmail.com" title="Enviar email para Thiago" aria-label="Envie-me um email"><i class="fas fa-envelope"></i></a>
+          <a href="cv/Thiago-Silva-Lima-CV.pdf" class="cv-link" title="Baixar CV" aria-label="Baixar CV">CV</a>
         </nav>
       </div>
     </header>
@@ -112,7 +146,7 @@
               <span class="tech-badge">JavaScript</span>
               <span class="tech-badge">Vite</span>
             
-              <a href="https://github.com/SEU-USUARIO/SEU-REPOSITORIO"
+              <a href="https://github.com/thiago23sl/react-firebase-app"
                  target="_blank"
                  rel="noopener noreferrer"
                  class="repo-link"
